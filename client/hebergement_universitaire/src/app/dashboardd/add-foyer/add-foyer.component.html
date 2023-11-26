@@ -1,0 +1,23 @@
+<div class="container custumer_container ">
+    <div class="card custum-card w-100">
+
+        <h5 class="card-header custumer_color p-2 mt-3">Ajouter Foyer</h5>
+        <div class="card-body w-100">
+            <form [formGroup]="AddFoyerForm" (ngSubmit)="ajouterNouveauFoyer()">
+                <div class="mb-3">
+                    <label for="nom_Foyer" class="form-label">Nom foyer</label>
+                    <input type="text" class="form-control" id="nom_Foyer" aria-describedby="foyerName"
+                        formControlName="nomFoyer">
+
+                </div>
+                <div class="mb-3">
+                    <label for="capacity" class="form-label">Capacité foyer</label>
+                    <input type="number" class="form-control" id="capacity" formControlName="capaciteFoyer">
+                </div>
+
+                <button type="submit" class="btn custumer_color">Enregister</button>
+            </form>
+        </div>
+    </div>
+
+</div>
